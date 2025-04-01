@@ -28,7 +28,7 @@ It supports two user roles—**Event Organizers** and **Customers**—and featur
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/kushtiwari13/ror_task
    cd event_booking_system
    ```
 
@@ -93,7 +93,7 @@ Since there are no dedicated signup endpoints in this so i am creating sample Ev
    rails server
    ```
 
-   The application will be available at [http://localhost:3000](http://localhost:3000).
+   The application will be available at http://localhost:3000
 
 2. **Start Redis:**
 
@@ -116,6 +116,8 @@ Since there are no dedicated signup endpoints in this so i am creating sample Ev
 
 
 
+
+
 ## Testing the API with Postman
 
 ### 1. Obtain a JWT Token
@@ -132,11 +134,20 @@ Since there are no dedicated signup endpoints in this so i am creating sample Ev
     }
     ```
   - **Response:** A JSON containing a token (e.g., `{ "token": "eyJhbGciOiJIUzI1NiJ9..." }`).
+  - Save this `{ "token": "eyJhbGciOiJIUzI1NiJ9..." }`
 
 - **Customer Login:**
   - **Method:** POST
   - **URL:** `http://localhost:3000/api/v1/login/customer`
-  - **Body:** Use the customer's credentials similarly.
+  - **Body:**
+  - ```json
+    {
+      "email": "customer@example.com",
+      "password": "password"
+    }
+    ```
+  - **Response:** A JSON containing a token (e.g., `{ "token": "eyJhbGciOiJIUzI1NiJ9..." }`).
+  - Save this `{ "token": "eyJhbGciOiJIUzI1NiJ9..." }`
 
 ### 2. Use the Token for Protected Endpoints
 
