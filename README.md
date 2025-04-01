@@ -1,8 +1,3 @@
-Below is a complete example of a README.md file that you can include in your repository. This file explains all the steps—from installation to testing the API endpoints and viewing job logs—so that anyone can set up, run, and test your Event Booking System application.
-
----
-
-```markdown
 # Event Booking System Backend
 
 It supports two user roles—**Event Organizers** and **Customers**—and features role-based authentication using JWT. The application also uses Sidekiq for background jobs.
