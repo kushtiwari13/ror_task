@@ -224,7 +224,6 @@ I am using Windows, you can view your development logs using PowerShell:
 Get-Content .\log\development.log -Wait
 ```
 
-This command works similarly to `tail -f` on Unix systems.
 
 ## Troubleshooting
 
