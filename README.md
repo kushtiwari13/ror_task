@@ -1,3 +1,10 @@
+
+## Video Explanation
+
+Here is a Video Explanation of my whole project
+[https://drive.google.com/file/d/13sToqb3MVwYpaN2fZGZLarYq7w3cteXg/view](https://drive.google.com/file/d/13sToqb3MVwYpaN2fZGZLarYq7w3cteXg/view)
+
+
 # Event Booking System Backend
 
 It supports two user roles—**Event Organizers** and **Customers**—and features role-based authentication using JWT. The application also uses Sidekiq for background jobs.
